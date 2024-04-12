@@ -1,0 +1,2 @@
+# JapaneseBlog
+Japanese Journal/Blog
