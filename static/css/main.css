@@ -8,15 +8,20 @@ body, h1, h2, h3, p, ul, ol, li {
 /* Set a default font family and size */
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
   background-color: rgb(60, 60, 60);
+  color: rgb(217, 217, 217);
 }
 
 .page-title{
   text-align: center;
 }
+
+.centre{
+  text-align: center;
+}
 /* Set a max-width to keep content from stretching too wide */
 .container {
+  border: 2px solid green;
   max-width:44em;
   margin:20px auto;
   padding:0 1.5rem;
@@ -24,29 +29,47 @@ body {
   line-height: 1.8em;
 }
 
+div{
+  width: 100%;
+}
+
 /* Style for headings */
 h1 {
-  color: rgb(217, 217, 217);
   font-size: 36px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 h2 {
-  color: rgb(217, 217, 217);
   font-size: 24px;
   margin-bottom: 15px;
 }
 
 h3 {
-  color: rgb(217, 217, 217);
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 /* Basic styling for paragraphs */
 p {
-  color: rgb(217, 217, 217);
-  margin-bottom: 15px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+}
+
+.bold{
+  font-weight: bolder;
+}
+
+.highlight-green{
+  color: rgb(0, 255, 145);
+}
+
+.highlight-blue{
+  color: rgb(0, 191, 255);
+}
+
+.highlight-orange{
+  color: rgb(255, 187, 0);
 }
 
 /* Style for links */
@@ -75,13 +98,13 @@ img {
   border-radius: 4px;
   max-width: 100%; /* Make images responsive */
   height: auto;
-}
 
-/* Add margin to the top and bottom of images */
-img {
+  /* Add margin to the top and bottom of images */
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+
 
 /* Basic styling for buttons */
 .button {
@@ -98,10 +121,69 @@ img {
   background-color: #0056b3; /* Darker blue on hover */
 }
 
+/* Optional: Add some basic styling to the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(53, 53, 53);
+  margin: 1.5em auto;
+  table-layout: fixed;
+  display: table;
+}
+
+th, td {
+  border: 2px solid black;
+  text-align: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: table-cell;
+}
+
+tr{
+  box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
+}
+
+td{
+  background-color: rgb(55, 55, 55);
+  font-size: 1em;
+}
+
+th {
+    border: 0.125em solid rgb(0, 0, 0);
+    background-color: rgb(65, 65, 65);
+    font-size: 1.1em;
+    font-weight: 400;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+table td:nth-of-type(1), th:nth-of-type(1) {
+  min-width:auto;
+}
+
+
 /* Responsive design - adjust layout for smaller screens */
-@media (max-width: 768px) {
+
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 15px;
+  }
   .container {
     padding: 0 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+      font-size: 18px;
+  }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+  body {
+      font-size: 20px;
   }
 }
   

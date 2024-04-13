@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kana Chart</title>
+    <link rel="stylesheet" href="../../static/css/main.css">
+    <link rel="stylesheet" href="../../static/css/kana.css">
+    <link rel="stylesheet" href="../../static/css/components.css">
+
+
+</head>
+<!-- Make sliders for each kana -->
+<body>
+    
+    <main class="container">
+        <div class="toggle-container">
+            <div class="toggle-parent">
+                <p class="toggle-text">Hiragana</p>
+                <label class="switch">
+                    <input type="checkbox" id="hiragana-box">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+    
+            <div class="toggle-parent">
+                <p class="toggle-text">Katakana</p>
+                <label class="switch">
+                    <input type="checkbox" id="katakana-box" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+
+
+        <div id="hiragana-chart">
+            <h1 class="page-title">Hiragana</h1>
+            <p>Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
+    
+                I am now going onto another line to see if this acutally works
+            </p>
+    
+            <table>
+                <caption class="centre">Hiragana</caption>
+                <thead>
+                    <tr>
+                        <th class="centre">n</th>
+                        <th class="centre">w</th>
+                        <th class="centre">r</th>
+                        <th class="centre">y</th>
+                        <th class="centre">m</th>
+                        <th class="centre">h</th>
+                        <th class="centre">n</th>
+                        <th class="centre">t</th>
+                        <th class="centre">s</th>
+                        <th class="centre">k</th>
+                        <th class="centre">&nbsp;</th>
+                        <th class="centre">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="kana-table">
+                        <td class="centre">
+                            ん
+                            <br>
+                            <span class="highlight-blue">(n)</span>
+                        </td>
+                        <td class="centre">わ</td>
+                        <td class="centre">ら</td>
+                        <td class="centre">や</td>
+                        <td class="centre">ま</td>
+                        <td class="centre">は</td>
+                        <td class="centre">な</td>
+                        <td class="centre">た</td>
+                        <td class="centre">さ</td>
+                        <td class="centre">か</td>
+                        <td class="centre">あ</td>
+                        <th class="centre">a</th>
+                    </tr>
+                    <tr class="kana-table">
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">り</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">み</td>
+                        <td class="centre">ひ</td>
+                        <td class="centre">に</td>
+                        <td class="centre">
+                            ち
+                            <br>
+                            <span class="highlight-blue">(chi)</span>
+                        </td>
+                        <td class="centre">
+                            し
+                            <br>
+                            <span class="highlight-blue">(shi)</span>
+                        </td>
+                        <td class="centre">き</td>
+                        <td class="centre">い</td>
+                        <th class="centre">i</th>
+                    </tr>
+                    <tr class="kana-table">
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">る</td>
+                        <td class="centre">ゆ</td>
+                        <td class="centre">む</td>
+                        <td class="centre">
+                            ふ
+                            <br>
+                            <span class="highlight-blue">(fu)</span>
+                        </td>
+                        <td class="centre">ぬ</td>
+                        <td class="centre">
+                            つ
+                            <br>
+                            <span class="highlight-blue">(tsu)</span>
+                        </td>
+                        <td class="centre">す</td>
+                        <td class="centre">く</td>
+                        <td class="centre">う</td>
+                        <th class="centre">u</th>
+                    </tr>
+                    <tr class="kana-table">
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">れ</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">め</td>
+                        <td class="centre">へ</td>
+                        <td class="centre">ね</td>
+                        <td class="centre">て</td>
+                        <td class="centre">せ</td>
+                        <td class="centre">け</td>
+                        <td class="centre">え</td>
+                        <th class="centre">e</th>
+
+                    </tr>
+                    <tr class="kana-table">
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">
+                            を
+                            <br>
+                            <span class="highlight-blue">(wo)</span>
+                        </td>
+                        <td class="centre">ろ</td>
+                        <td class="centre">よ</td>
+                        <td class="centre">も</td>
+                        <td class="centre">ほ</td>
+                        <td class="centre">の</td>
+                        <td class="centre">と</td>
+                        <td class="centre">そ</td>
+                        <td class="centre">こ</td>
+                        <td class="centre">お</td>
+                        <th class="centre">o</th>
+
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="katakana-chart">
+            <h1 class="page-title">Katakana</h1>
+            <p>Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
+    
+                I am now going onto another line to see if this acutally works
+            </p>
+    
+            <table>
+                <caption class="centre">Katakana</caption>
+                <thead>
+                    <tr>
+                        <th class="centre">n</th>
+                        <th class="centre">w</th>
+                        <th class="centre">r</th>
+                        <th class="centre">y</th>
+                        <th class="centre">m</th>
+                        <th class="centre">h</th>
+                        <th class="centre">n</th>
+                        <th class="centre">t</th>
+                        <th class="centre">s</th>
+                        <th class="centre">k</th>
+                        <th class="centre">&nbsp;</th>
+                        <th class="centre">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="kana-table">
+                        <td class="centre">
+                            ん
+                            <br>
+                            <span class="highlight-blue">(n)</span>
+                        </td>
+                        <td class="centre">わ</td>
+                        <td class="centre">ら</td>
+                        <td class="centre">や</td>
+                        <td class="centre">ま</td>
+                        <td class="centre">は</td>
+                        <td class="centre">な</td>
+                        <td class="centre">た</td>
+                        <td class="centre">さ</td>
+                        <td class="centre">か</td>
+                        <td class="centre">あ</td>
+                        <th class="centre">a</th>
+                    </tr>
+                    <tr class="kana-table">
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">り</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">み</td>
+                        <td class="centre">ひ</td>
+                        <td class="centre">に</td>
+                        <td class="centre">
+                            ち
+                            <br>
+                            <span class="highlight-blue">(chi)</span>
+                        </td>
+                        <td class="centre">
+                            し
+                            <br>
+                            <span class="highlight-blue">(shi)</span>
+                        </td>
+                        <td class="centre">き</td>
+                        <td class="centre">い</td>
+                        <th class="centre">i</th>
+                    </tr>
+                    <tr class="kana-table">
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">る</td>
+                        <td class="centre">ゆ</td>
+                        <td class="centre">む</td>
+                        <td class="centre">
+                            ふ
+                            <br>
+                            <span class="highlight-blue">(fu)</span>
+                        </td>
+                        <td class="centre">ぬ</td>
+                        <td class="centre">
+                            つ
+                            <br>
+                            <span class="highlight-blue">(tsu)</span>
+                        </td>
+                        <td class="centre">す</td>
+                        <td class="centre">く</td>
+                        <td class="centre">う</td>
+                        <th class="centre">u</th>
+                    </tr>
+                    <tr class="kana-table">
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">れ</td>
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">め</td>
+                        <td class="centre">へ</td>
+                        <td class="centre">ね</td>
+                        <td class="centre">て</td>
+                        <td class="centre">せ</td>
+                        <td class="centre">け</td>
+                        <td class="centre">え</td>
+                        <th class="centre">e</th>
+
+                    </tr>
+                    <tr class="kana-table">
+                        <td class="centre">&nbsp;</td>
+                        <td class="centre">
+                            を
+                            <br>
+                            <span class="highlight-blue">(wo)</span>
+                        </td>
+                        <td class="centre">ろ</td>
+                        <td class="centre">よ</td>
+                        <td class="centre">も</td>
+                        <td class="centre">ほ</td>
+                        <td class="centre">の</td>
+                        <td class="centre">と</td>
+                        <td class="centre">そ</td>
+                        <td class="centre">こ</td>
+                        <td class="centre">お</td>
+                        <th class="centre">o</th>
+
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    <script type="module" src="../../static/js/kana.js"></script>
+</body>
+</html>
