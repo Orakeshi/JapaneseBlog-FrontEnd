@@ -1,0 +1,107 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin','Helvetica Neue',helvetica,arial,sans-serif;
+  }
+  
+/* Set a default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: rgb(60, 60, 60);
+}
+
+.page-title{
+  text-align: center;
+}
+/* Set a max-width to keep content from stretching too wide */
+.container {
+  max-width:44em;
+  margin:20px auto;
+  padding:0 1.5rem;
+  letter-spacing: 0.04em;
+  line-height: 1.8em;
+}
+
+/* Style for headings */
+h1 {
+  color: rgb(217, 217, 217);
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: rgb(217, 217, 217);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: rgb(217, 217, 217);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Basic styling for paragraphs */
+p {
+  color: rgb(217, 217, 217);
+  margin-bottom: 15px;
+}
+
+/* Style for links */
+a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Style for lists */
+ul, ol {
+  margin-bottom: 15px;
+}
+
+/* Style for list items */
+li {
+  margin-bottom: 5px;
+}
+
+/* Add a border to images */
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+}
+
+/* Add margin to the top and bottom of images */
+img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Basic styling for buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design - adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reduce padding on smaller screens */
+  }
+}
+  
