@@ -11,8 +11,16 @@ body {
   background-color: rgb(60, 60, 60);
   color: rgb(217, 217, 217);
 }
+.furigana{
+  color: rgb(239, 128, 128);
+  /* font-size: 12px; */
+} 
 
 .page-title{
+  text-align: center;
+}
+
+.page-subtitle{
   text-align: center;
 }
 
@@ -161,12 +169,17 @@ table td:nth-of-type(1), th:nth-of-type(1) {
   min-width:auto;
 }
 
+/* .japanese-text{
+  
+}
+*/
+
 
 /* Responsive design - adjust layout for smaller screens */
 
 @media only screen and (max-width: 600px) {
   body {
-      font-size: 15px;
+      font-size: 11px;
   }
   .container {
     padding: 0 10px; /* Reduce padding on smaller screens */
@@ -176,14 +189,14 @@ table td:nth-of-type(1), th:nth-of-type(1) {
 /* Medium screens (tablets) */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   body {
-      font-size: 18px;
+      font-size: 13px;
   }
 }
 
 /* Large screens (desktops) */
 @media only screen and (min-width: 1025px) {
   body {
-      font-size: 20px;
+      font-size: 15px;
   }
 }
   
