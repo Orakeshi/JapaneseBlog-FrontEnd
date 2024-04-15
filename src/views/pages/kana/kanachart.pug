@@ -1,0 +1,69 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Test
+        link(rel="stylesheet", href="../../../sass/kana.scss")
+        link(rel="stylesheet", href="../../../sass/elements.scss")
+        link(rel="stylesheet", href="../../../sass/page.scss")
+        link(rel="stylesheet", href="../../../sass/common.scss")
+        link(rel="stylesheet", href="../../../sass/components/toggle.scss")
+
+        include ../../layout.pug
+        include ../../components/toggle.pug
+        include ../../components/japanese.pug
+        include ./hiraganachart.pug
+        include ./katakanachart.pug
+
+
+
+body
+    main.container
+        div.toggle-container
+            +toggle('Hiragana','hiragana-box', 'hiragana-chart')
+            +toggle('Katakana','katakana-box', 'katakana-chart')
+
+        div#hiragana-chart
+            div#hiragana-container
+                h1.page-title
+                    +translationFurigana("Hiragana", [{平: 'ひら'}, {仮: 'が'}, {名: 'な'}])
+                p 
+                    | Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
+                    | 平仮名 【ひら・が・な
+
+                +hiragana
+                
+                div#hiragana-extra-container
+                    h2.page-subtitle
+                        +translationFurigana("Dakuten", [{濁: 'だく'}, {点: 'てん'}])
+                        |  & 
+                        +translationFurigana("Handakuten", [{半: 'はん'}, {濁: 'だく'}, {点: 'てん'}])
+
+                    p 
+                        | Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
+                        | 平仮名 【ひら・が・な
+
+                +hiraganaDakuten
+
+        div#katakana-chart
+            div#katakana-container
+                h1.page-title
+                    +translationFurigana("Katakana", [{片: 'かた'}, {仮: 'が'}, {名: 'な'}])
+                p 
+                    | Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
+                    | 平仮名 【ひら・が・な
+
+                +katakana
+                
+                div#katakana-extra-container
+                    h2.page-subtitle
+                        +translationFurigana("Dakuten", [{濁: 'だく'}, {点: 'てん'}])
+                        |  & 
+                        +translationFurigana("Handakuten", [{半: 'はん'}, {濁: 'だく'}, {点: 'てん'}])
+
+                    p 
+                        | Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
+                        | 平仮名 【ひら・が・な
+
+                +katakanaDakuten
+
