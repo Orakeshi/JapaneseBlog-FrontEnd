@@ -2,6 +2,8 @@ const path = require('path');
 const PugPlugin = require('pug-plugin');
 
 module.exports = {
+  mode: 'development',
+  // other configurations...
   output: {
     path: path.join(__dirname, 'dist/'),
   },
@@ -32,11 +34,11 @@ module.exports = {
 
   module: {
     rules: [
-        
       {
         test: /\.(s?css|sass)$/,
         use: ['css-loader', 'sass-loader']
       },
+
       {
         test: /\.(ico|png|jp?g|webp|svg)$/,
         type: 'asset/resource',
