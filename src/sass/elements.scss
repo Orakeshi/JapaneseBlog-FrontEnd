@@ -120,11 +120,16 @@ table td:nth-of-type(1), th:nth-of-type(1) {
     body {
         font-size: $small-font-size;
     }
+
     .container {
-      padding: 0 10px; /* Reduce padding on smaller screens */
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+
+    .kana-table{
+        font-size: 12px;
+        text-size-adjust: 100%;
     }
   }
-
   /* Medium screens (tablets) */
 @media only screen and (min-width: $breakpoint-medium) {
     body {

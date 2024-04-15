@@ -13,6 +13,8 @@ html(lang="en")
         include ../../components/toggle.pug
         include ../../components/japanese.pug
         include ./hiraganachart.pug
+        include ./katakanachart.pug
+
 
 
 body
@@ -42,4 +44,26 @@ body
                         | 平仮名 【ひら・が・な
 
                 +hiraganaDakuten
+
+        div#katakana-chart
+            div#katakana-container
+                h1.page-title
+                    +translationFurigana("Katakana", [{片: 'かた'}, {仮: 'が'}, {名: 'な'}])
+                p 
+                    | Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
+                    | 平仮名 【ひら・が・な
+
+                +katakana
+                
+                div#katakana-extra-container
+                    h2.page-subtitle
+                        +translationFurigana("Dakuten", [{濁: 'だく'}, {点: 'てん'}])
+                        |  & 
+                        +translationFurigana("Handakuten", [{半: 'はん'}, {濁: 'だく'}, {点: 'てん'}])
+
+                    p 
+                        | Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
+                        | 平仮名 【ひら・が・な
+
+                +katakanaDakuten
 

@@ -20,7 +20,7 @@ mixin furigana(characters)
 //-             | )
 
 mixin translationFurigana(translation, translationCharacters)
-    | #{toggleElement}(
+    | #{translation}(
     +furigana(translationCharacters)
     | )
 
