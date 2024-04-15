@@ -1,0 +1,16 @@
+.page-title {
+  text-align: center;
+}
+
+.page-subtitle {
+  text-align: center;
+}
+
+.container {
+  border: 2px solid green;
+  max-width: 44em;
+  margin: 20px auto;
+  padding: 0 1.5rem;
+  letter-spacing: 0.04em;
+  line-height: 1.8em;
+}

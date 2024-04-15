@@ -1,0 +1,23 @@
+.bold {
+  font-weight: bolder;
+}
+
+.highlight-green {
+  color: #00ff91;
+}
+
+.highlight-orange {
+  color: #ffbb00;
+}
+
+.highlight-blue {
+  color: #00bfff;
+}
+
+.highlight-red {
+  color: #ef8080;
+}
+
+.furigana {
+  color: #ef8080;
+}
