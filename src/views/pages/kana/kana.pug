@@ -5,9 +5,9 @@ html(lang="en")
         title Kana
         link(rel="stylesheet", href="../../../sass/kana.scss")
         link(rel="stylesheet", href="../../../sass/elements.scss")
-        link(rel="stylesheet", href="../../../sass/page.scss")
         link(rel="stylesheet", href="../../../sass/common.scss")
         link(rel="stylesheet", href="../../../sass/components/toggle.scss")
+        link(rel="stylesheet", href="../../../sass/page.scss")
 
         include ../../layout.pug
         
@@ -17,6 +17,7 @@ html(lang="en")
         include ./katakanachart.pug
 
 body
+    include ../../partials/navigationbar.pug
     main.container
         div.toggle-container
             +toggle('Hiragana','hiragana-box', 'hiragana-chart')
