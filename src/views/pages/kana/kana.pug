@@ -2,7 +2,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Test
+        title Kana
         link(rel="stylesheet", href="../../../sass/kana.scss")
         link(rel="stylesheet", href="../../../sass/elements.scss")
         link(rel="stylesheet", href="../../../sass/page.scss")
@@ -10,12 +10,11 @@ html(lang="en")
         link(rel="stylesheet", href="../../../sass/components/toggle.scss")
 
         include ../../layout.pug
+        
         include ../../components/toggle.pug
         include ../../components/japanese.pug
         include ./hiraganachart.pug
         include ./katakanachart.pug
-
-
 
 body
     main.container
@@ -48,7 +47,7 @@ body
         div#katakana-chart
             div#katakana-container
                 h1.page-title
-                    +translationFurigana("Katakana", [{片: 'かた'}, {仮: 'が'}, {名: 'な'}])
+                    +translationFurigana("Katakana", [{片: 'かた'}, {仮: 'か'}, {名: 'な'}])
                 p 
                     | Exmaple text in here. This is a very long test paragraph. I am not entirely sure what I am writing in here as of now. But I just keep typing.
                     | 平仮名 【ひら・が・な

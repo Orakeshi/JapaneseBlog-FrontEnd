@@ -1,3 +1,5 @@
+@import '_screens';
+
 .page-title{
     text-align: center;
   }
@@ -14,3 +16,9 @@
     letter-spacing: 0.04em;
     line-height: 1.8em;
 }
+
+@media only screen and (max-width: $breakpoint-maxwidth) {
+    .container {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+  }

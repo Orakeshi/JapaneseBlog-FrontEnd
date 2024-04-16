@@ -1,6 +1,8 @@
 @import '_screens';
 @import '_text';
 
+$background-colour: rgb(60, 60, 60);
+
 /* Reset default browser styles */
 body, h1, h2, h3, p, ul, ol, li {
     margin: 0;
@@ -11,8 +13,8 @@ body, h1, h2, h3, p, ul, ol, li {
 /* Set a default font family and size */
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(60, 60, 60);
-  color: rgb(217, 217, 217);
+  background-color: $background-colour;
+  color: $text-colour;
 }
 
 div{
@@ -116,24 +118,15 @@ table td:nth-of-type(1), th:nth-of-type(1) {
     min-width:auto;
 }  
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $breakpoint-maxwidth) {
     body {
         font-size: $small-font-size;
-    }
-
-    .container {
-        padding: 0 10px; /* Reduce padding on smaller screens */
-    }
-
-    .kana-table{
-        font-size: 12px;
-        text-size-adjust: 100%;
     }
   }
   /* Medium screens (tablets) */
 @media only screen and (min-width: $breakpoint-medium) {
     body {
-        font-size: $normal-font-size;
+        font-size: $large-font-size;
     }
 }
   
