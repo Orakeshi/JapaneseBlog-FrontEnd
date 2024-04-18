@@ -18,6 +18,14 @@
   color: #ef8080;
 }
 
+/* Responsive design - adjust layout for smaller screens */
 .furigana {
   color: #ef8080;
+}
+
+@media only screen and (max-width: 600px) {
+  .kana-table {
+    font-size: 12px;
+    text-size-adjust: 100%;
+  }
 }
