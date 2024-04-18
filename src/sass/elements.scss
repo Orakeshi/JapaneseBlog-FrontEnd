@@ -46,10 +46,12 @@ p {
   
   /* Style for links */
 a {
-    color: #007bff; /* Blue color for links */
+    //color: #007bff; /* Blue color for links */
+    color: rgb(175, 175, 175);
     text-decoration: none;
 
     &:hover{
+        color: rgb(232, 232, 232);;
         text-decoration: underline; /* Underline links on hover */
     }
 }
@@ -66,14 +68,7 @@ li {
   
   /* Add a border to images */
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
     max-width: 100%; /* Make images responsive */
-    height: auto;
-  
-    /* Add margin to the top and bottom of images */
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
   
 

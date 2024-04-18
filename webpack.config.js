@@ -4,8 +4,17 @@ const PugPlugin = require('pug-plugin');
 module.exports = {
   mode: 'development',
   // other configurations...
+  
+  resolve: {
+    alias: {
+      Images: path.join(__dirname, 'src/images/'),
+      Html: path.join(__dirname, 'src/views/'),
+      Sass: path.join(__dirname, 'src/sass/')
+    },
+  },
+
   output: {
-    path: path.join(__dirname, 'dist/'),
+    path: path.join("/Users/tommywebb/Documents/Dev/Japanese Site/", 'Release/'),
   },
 
   plugins: [
@@ -34,6 +43,27 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.(html)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              // The `mimetype` and `encoding` arguments will be obtained from your options
+              // The `resourcePath` argument is path to file.
+              generator: (content, mimetype, encoding, resourcePath) => {
+                if (/\.html$/i.test(resourcePath)) {
+                  return `data:${mimetype},${content.toString()}`;
+                }
+                return `data:${mimetype}${
+                  encoding ? `;${encoding}` : ''
+                },${content.toString(encoding)}`;
+              },
+            },
+          },
+        ],
+      },
+      
       {
         test: /\.(s?css|sass)$/,
         use: ['css-loader', 'sass-loader']
