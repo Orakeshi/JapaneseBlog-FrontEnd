@@ -7,20 +7,22 @@ module.exports = {
   
   resolve: {
     alias: {
-      Images: path.join(__dirname, 'src/images/'),
-      Html: path.join(__dirname, 'src/views/'),
-      Sass: path.join(__dirname, 'src/sass/')
+      Images: path.join(__dirname, 'public/images/'),
+      Pug: path.join(__dirname, 'public/views/'),
+      Sass: path.join(__dirname, 'public/sass/'),
+      JS: path.join(__dirname, 'public/js/'),
+      Json: path.join(__dirname, 'public/json/'),
     },
   },
 
   output: {
-    path: path.join("/Users/tommywebb/Documents/Dev/Japanese Site/", 'Release/'),
+    path: path.join(__dirname, 'Release/'),
   },
 
   plugins: [
     new PugPlugin({
       // automatically processing all templates in the path
-      entry: 'src/views/',
+      entry: 'public/views/',
       // - OR - define many pages manually (key is output filename w/o `.html`)
       //entry: {
         // simple page config w/o variables
@@ -77,5 +79,11 @@ module.exports = {
         },
       },
     ],
+  },
+  devServer: {
+    static: path.join(__dirname, 'dist'),  // Replace contentBase with static
+    hot: true,  // Enable HMR
+    open: true, // Automatically open the browser
+    port: 3010, // Port for the dev server
   },
 };

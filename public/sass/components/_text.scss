@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+.bold{
+  font-weight: bolder;
+}
+
+.highlight-green{
+  color: $highlight-green;
+}
+
+.highlight-orange{
+  color: $highlight-orange;
+}
+
+.highlight-blue{
+  color: $highlight-blue;
+}
+
+.highlight-red{
+  color: $highlight-red;
+}
+
+.highlight-purple{
+  color: $highlight-purple;
+}
+
+.fill-purple{
+  border: 3px solid $highlight-purple;
+}

@@ -1,0 +1,22 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        title
+            block title
+                | Japanese Blog  // Fallback if no title is set
+
+        link(rel="stylesheet", href=require("@Sass/main.scss"))
+        link(rel="icon", href=require("@Images/orakeshi-icon.png"))
+
+    body
+        include ./navigationbar.pug
+
+        main.container
+            block content  // Placeholder for page-specific content
+
+        // Include common footer and scripts
+        include ./footer.pug
+        script(src="JS/common/pages/page.js")
+        block scripts  // Placeholder for page-specific scripts
